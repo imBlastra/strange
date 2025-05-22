@@ -109,9 +109,15 @@
       <div class="ascii-art">
         { strange.dev }
         <br>
+              <div class="cmdline-wrap">
+        <span class="cmd-prompt">$</span>
+        <input class="cmdline" id="cmdline" type="text" spellcheck="false" autocomplete="off" autofocus placeholder="Type a command..." onkeydown="if(event.key==='Enter'){runCommand();}" />
+      </div>
+      <div class="cmd-output" id="cmd-output"></div>
+    </div>
         ───────────────────────────────
         <br>
-        $ cat ~/about_me.txt
+        $ cat ~/links.txt
       </div>
       <div>
         <span class="prompt">imBlastra:</span> <br>
@@ -134,13 +140,19 @@
       <br>
       <div style="font-size:0.93em;color:#555;margin-top:2em;text-align:center;">
         <span style="color:#08f700;">#</span> powered by <span style="color:#00fff7;">nerd vibes</span>
+        <br>
+        ───────────────────────────────
+        <br>
+        $ cat ~/about.txt
+        <br>
+        <b>hi there im imBlastra, a big geek whos been codeing since 4yo, and this is strange.dev.</b>
+        <p><b>Tools:</b></p>
+        <p><b>Chromebook</b></p>
+        <p><b>Termux</b></p>
+        <p><b>Helix</b></p>
+        <p><b>Github</b></p>
+        <p><b>Netilfy(i used that for thsi website)</b></p>
       </div>
-      <div class="cmdline-wrap">
-        <span class="cmd-prompt">$</span>
-        <input class="cmdline" id="cmdline" type="text" spellcheck="false" autocomplete="off" autofocus placeholder="Type a command..." onkeydown="if(event.key==='Enter'){runCommand();}" />
-      </div>
-      <div class="cmd-output" id="cmd-output"></div>
-    </div>
     <script>
       const cmdInput = document.getElementById('cmdline');
       const cmdOutput = document.getElementById('cmd-output');
