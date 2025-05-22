@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>strange.dev</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background: #18181a;
+        color: #c2ffb3;
+        font-family: "Fira Mono", "Consolas", monospace;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .terminal {
+        background: #22242a;
+        border: 2px solid #08f700;
+        border-radius: 8px;
+        padding: 2rem 3rem;
+        margin: 3rem 0 2rem 0;
+        box-shadow: 0 0 24px #08f70055;
+        width: 95%;
+        max-width: 540px;
+        font-size: 1.07rem;
+      }
+
+      .prompt {
+        color: #08f700;
+        font-weight: bold;
+      }
+
+      b, .section-title {
+        color: #08f700;
+        font-weight: bold;
+        font-family: "Fira Mono", "Consolas", monospace;
+        font-size: 1.14em;
+      }
+
+      a {
+        color: #00fff7;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      a:hover {
+        color: #e5ff00;
+        text-shadow: 0 0 8px #e5ff00bb;
+      }
+
+      .ascii-art {
+        font-family: "Fira Mono", "Consolas", monospace;
+        color: #08f700;
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 1.5em;
+        white-space: pre;
+        letter-spacing: 1px;
+        line-height: 1.1;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap" rel="stylesheet">
+  </head>
   <body>
- <title>strange.dev</title>
-  <p><b>imBlastra:</b></p>
-  <b><a href="https://imblastra.github.io/blog">Blog</a></b>
-  <p><b>Vertex:</b></p>
-  <p><b><a href="https://imblastra.github.io/notes">Vertex Notes</a></b></p>
-<p><b><a href="https://imblastra.github.io/auth">Vertex Auth</a></b></p>
-  <p><b><a href="https://imblastra.github.io/wave">Vertex Wave</a></b></p>
-  <p><b>(un)profesional:</b></p>
-  <p><b><a href="https://imblastra.github.io/genie">Watch your mouth</a></b></p>
+    <div class="terminal">
+      <div class="ascii-art">
+        { strange.dev }
+        <br>
+        ───────────────────────────────
+        <br>
+        $ cat ~/about_me.txt
+      </div>
+      <div>
+        <span class="prompt">imBlastra:</span> <br>
+        <b><a href="https://imblastra.github.io/blog">Blog</a></b>
+      </div>
+      <br>
+      <div>
+        <span class="prompt">Vertex:</span> <br>
+        <b><a href="https://imblastra.github.io/notes">Vertex Notes</a></b>
+        <br>
+        <b><a href="https://imblastra.github.io/auth">Vertex Auth</a></b>
+        <br>
+        <b><a href="https://imblastra.github.io/wave">Vertex Wave</a></b>
+      </div>
+      <br>
+      <div>
+        <span class="prompt">(un)professional:</span> <br>
+        <b><a href="https://imblastra.github.io/genie">Watch your mouth</a></b>
+      </div>
+      <br>
+      <div style="font-size:0.93em;color:#555;margin-top:2em;text-align:center;">
+        <span style="color:#08f700;">#</span> powered by <span style="color:#00fff7;">nerd vibes</span>
+      </div>
+    </div>
   </body>
 </html>
-<style>
-  b {
-    text-align: center;
-    color: darkgreen;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-  body {
-    background-color: #222;
-  }
-</style>
